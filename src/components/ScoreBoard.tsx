@@ -14,9 +14,10 @@ export const ScoreBoard: React.FC<ScoreBoardProps> = ({ score, rounds }) => {
 
             {/* Animated Light Sweep */}
             <motion.div
-                animate={{ x: ['-100%', '200%'] }}
-                transition={{ duration: 3, repeat: Infinity, repeatDelay: 5, ease: "linear" }}
-                className="absolute top-0 bottom-0 w-20 bg-gradient-to-r from-transparent via-white/10 to-transparent skew-x-12"
+                initial={{ left: '-20%' }}
+                animate={{ left: ['0%', '120%'] }}
+                transition={{ duration: 2, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
+                className="absolute top-0 bottom-0 w-24 bg-gradient-to-r from-transparent via-white/15 to-transparent skew-x-12 pointer-events-none"
             />
 
             <div className="flex flex-col items-center w-24">
