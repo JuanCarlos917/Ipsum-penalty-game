@@ -21,7 +21,7 @@ export function BrandSerity() {
                     }}
                     className="absolute inset-0 blur-2xl"
                     style={{
-                        background: 'radial-gradient(circle, rgba(14,165,233,0.4) 0%, rgba(6,182,212,0.2) 50%, transparent 70%)',
+                        background: 'radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(6,182,212,0.2) 50%, transparent 70%)',
                         transform: 'scale(1.5) translateY(10%)'
                     }}
                 />
@@ -31,7 +31,7 @@ export function BrandSerity() {
                     alt="Serity"
                     animate={{ scale: [1, 1.02, 1] }}
                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                    className="relative h-16 md:h-24 w-auto object-contain drop-shadow-[0_0_20px_rgba(14,165,233,0.5)]"
+                    className="relative h-16 md:h-24 w-auto object-contain drop-shadow-[0_0_20px_rgba(251, 251, 251, 0.5)]"
                 />
             </div>
         </motion.div>

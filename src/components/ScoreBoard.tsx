@@ -56,7 +56,7 @@ export const ScoreBoard: React.FC<ScoreBoardProps> = ({ score, rounds }) => {
             </div>
 
             <div className="flex flex-col items-center w-24">
-                <span className="text-xs md:text-sm uppercase tracking-[0.2em] text-red-400 font-bold mb-1 drop-shadow-lg">CPU</span>
+                <span className="text-xs md:text-sm uppercase tracking-[0.2em] text-red-400 font-bold mb-1 drop-shadow-lg">MACHINE</span>
                 <div className="relative h-16 w-full flex justify-center items-center">
                     <AnimatePresence mode="popLayout">
                         <motion.span

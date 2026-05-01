@@ -22,7 +22,7 @@ export function BrandPartner() {
                     }}
                     className="absolute inset-0 blur-2xl"
                     style={{
-                        background: 'radial-gradient(circle, rgba(56,189,248,0.4) 0%, rgba(59,130,246,0.2) 50%, transparent 70%)',
+                        background: 'radial-gradient(circle, #07a5cb 0%, rgba(59,130,246,0.2) 50%, transparent 70%)',
                         transform: 'scale(1.5) translateY(10%)'
                     }}
                 />

@@ -309,7 +309,7 @@ function App() {
                                         initial={{ y: 30, opacity: 0 }}
                                         animate={{ y: 0, opacity: 1 }}
                                         transition={{ delay: 1 }}
-                                        whileHover={{ scale: 1.05, boxShadow: "0 0 40px rgba(59,130,246,0.6)" }}
+                                        whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(7, 165, 203)" }}
                                         whileTap={{ scale: 0.95 }}
                                         onClick={resetGame}
                                         className="mt-4 px-10 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-xl md:text-2xl font-bold uppercase tracking-wider rounded-full shadow-lg shadow-blue-500/30 border-2 border-white/20 cursor-pointer"

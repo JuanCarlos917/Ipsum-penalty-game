@@ -11,7 +11,7 @@ export const Controls: React.FC<ControlsProps> = ({ onShoot, disabled }) => {
             <button
                 disabled={disabled}
                 onClick={() => onShoot('left')}
-                className="glass px-6 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 active:scale-95 transition-all text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_15px_rgba(34,211,238,0.5)] border-l-4 border-l-cyan-400"
+                className="glass px-6 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 active:scale-95 transition-all text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_15px_#07a5cb] border-r-4 border-r-cyan-400"
             >
                 Left
             </button>
@@ -19,7 +19,7 @@ export const Controls: React.FC<ControlsProps> = ({ onShoot, disabled }) => {
             <button
                 disabled={disabled}
                 onClick={() => onShoot('center')}
-                className="glass px-8 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 active:scale-95 transition-all text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_15px_rgba(34,211,238,0.5)] border-b-4 border-b-cyan-400"
+                className="glass px-8 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 active:scale-95 transition-all text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_15px_#07a5cb] border-r-4 border-r-cyan-400"
             >
                 Center
             </button>
@@ -27,7 +27,7 @@ export const Controls: React.FC<ControlsProps> = ({ onShoot, disabled }) => {
             <button
                 disabled={disabled}
                 onClick={() => onShoot('right')}
-                className="glass px-6 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 active:scale-95 transition-all text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_15px_rgba(34,211,238,0.5)] border-r-4 border-r-cyan-400"
+                className="glass px-6 py-3 rounded-full font-bold uppercase tracking-widest hover:bg-white/20 active:scale-95 transition-all text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-[0_0_15px_#07a5cb] border-r-4 border-r-cyan-400"
             >
                 Right
             </button>
