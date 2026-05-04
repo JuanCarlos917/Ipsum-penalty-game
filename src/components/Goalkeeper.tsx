@@ -15,26 +15,26 @@ export const Goalkeeper: React.FC<GoalkeeperProps> = ({ action }) => {
             y: 0,
             rotate: 0,
             scale: 1,
-            transition: { type: 'spring', stiffness: 200, damping: 20 }
+            transition: { type: 'spring' as const, stiffness: 200, damping: 20 }
         },
         center: {
             x: 0,
             y: -30,
             scale: 1.15,
             rotate: 0,
-            transition: { type: 'spring', stiffness: 300, damping: 15 }
+            transition: { type: 'spring' as const, stiffness: 300, damping: 15 }
         },
         'dive-left': {
             x: -220,
             y: 30,
             rotate: -85,
-            transition: { type: 'spring', stiffness: 250, damping: 18 }
+            transition: { type: 'spring' as const, stiffness: 250, damping: 18 }
         },
         'dive-right': {
             x: 220,
             y: 30,
             rotate: 85,
-            transition: { type: 'spring', stiffness: 250, damping: 18 }
+            transition: { type: 'spring' as const, stiffness: 250, damping: 18 }
         },
     };
 
