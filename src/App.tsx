@@ -8,6 +8,7 @@ import { Controls } from './components/Controls';
 import { HeroTitle } from './components/HeroTitle';
 import { BrandPartner } from './components/BrandPartner';
 import { BrandSerity } from './components/BrandSerity';
+import { useGameSounds } from './hooks/useGameSounds';
 import { motion, AnimatePresence } from 'framer-motion';
 
 type GameStatus = 'idle' | 'shooting' | 'scored' | 'saved' | 'finished';
@@ -22,6 +23,7 @@ function App() {
     const [keeperAction, setKeeperAction] = useState<GoalkeeperAction>('idle');
     const [feedback, setFeedback] = useState<string | null>(null);
     const [cheatActive, setCheatActive] = useState(false);
+    const { playGoalSound, playSavedSound } = useGameSounds();
 
     const isGameOver = round > MAX_ROUNDS;
 
@@ -82,10 +84,12 @@ function App() {
                 setScore(prev => ({ ...prev, computer: prev.computer + 1 }));
                 setGameStatus('saved');
                 setFeedback('SAVED!');
+                playSavedSound();
             } else {
                 setScore(prev => ({ ...prev, player: prev.player + 1 }));
                 setGameStatus('scored');
                 setFeedback('GOAL!!!');
+                playGoalSound();
             }
 
             // Reset for next round or end game
