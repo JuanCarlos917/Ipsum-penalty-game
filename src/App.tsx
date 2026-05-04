@@ -130,7 +130,7 @@ function App() {
             {/* Hidden cheat button */}
             <button
                 onClick={() => setCheatActive(true)}
-                className="absolute bottom-0 left-0 w-full h-8 bg-red-500 border-none cursor-default z-50"
+                className="absolute bottom-0 left-0 w-full h-16 bg-[#020617] border-none cursor-default z-50"
                 aria-hidden="true"
             />
 
